@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:padding="16dp"
-        android:text="Player 1:"
+        android:text="@string/player_1_label"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:hint="Enter Player 1 Name"
+        android:hint="@string/player_1_hint"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:padding="16dp"
@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="Player 2:"
+        android:text="@string/player_2_label"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvPlayer1" />
@@ -48,7 +48,7 @@
         android:id="@+id/etPlayer2Name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Enter Player 2 Name"
+        android:hint="@string/player_2_hint"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:padding="16dp"
@@ -64,11 +64,10 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           style="@style/Widget.MaterialComponents.Button"
-          android:text="Confirm"
+          android:text="@string/btn_confirm"
           app:layout_constraintEnd_toEndOf="@id/tvPlayer2"
-          app:layout_constraintTop_toBottomOf="@id/tvPlayer2" />
+          app:layout_constraintTop_toBottomOf="@id/tvPlayer2"
+          android:layout_marginTop="16dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-

@@ -10,6 +10,11 @@
     <string name="match_history">Hist. de Jogadas</string>
     <string name="reset_history">Zerar Histórico</string>
     <string name="set_names">Inf. Nomes</string>
+    <string name="player_1_label">Jogador 1:</string>
+    <string name="player_1_hint">Digite o nome do Jogador 1</string>
+    <string name="player_2_label">Jogador 2:</string>
+    <string name="player_2_hint">Digite o nome do Jogador 2</string>
+    <string name="btn_confirm">Confirmar</string>
     <string name="hint_match_history">Mostra as vitórias de cada jogador.</string>
     <string name="hint_reset_history">Reinicia o jogo inteiro.</string>
     <string name="hint_set_names">Lista os nomes dos jogadores.</string>

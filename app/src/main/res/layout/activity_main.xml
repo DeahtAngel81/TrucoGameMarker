@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:importantForAccessibility="no"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/icon_player" />
@@ -93,6 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
+        android:importantForAccessibility="no"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonContainer"
         app:srcCompat="@drawable/icon_player" />
