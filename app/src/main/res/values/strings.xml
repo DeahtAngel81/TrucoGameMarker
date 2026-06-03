@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TrucoGameMarker 🇬🇧</string>
+    <string name="player_1_score">Player 1: %1$d points</string>
+    <string name="player_2_score">Player 2: %1$d points</string>
+    <string name="plus_1">+1</string>
+    <string name="plus_3">+3</string>
+    <string name="plus_6">+6</string>
+    <string name="plus_9">+9</string>
+    <string name="plus_12">+12</string>
+    <string name="match_history">Match History</string>
+    <string name="reset_history">Reset History</string>
+    <string name="set_names">Set Names</string>
+    <string name="hint_match_history">Shows each player\'s match wins.</string>
+    <string name="hint_reset_history">Resets the entire game.</string>
+    <string name="hint_set_names">Lists player names.</string>
+</resources>

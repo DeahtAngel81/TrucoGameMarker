@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TrucoGameMarker 🇪🇸</string>
+    <string name="player_1_score">Jugador 1: %1$d puntos</string>
+    <string name="player_2_score">Jugador 2: %1$d puntos</string>
+    <string name="plus_1">+1</string>
+    <string name="plus_3">+3</string>
+    <string name="plus_6">+6</string>
+    <string name="plus_9">+9</string>
+    <string name="plus_12">+12</string>
+    <string name="match_history">Historial de Jugadas</string>
+    <string name="reset_history">Restablecer Historial</string>
+    <string name="set_names">Informar Nombres</string>
+    <string name="hint_match_history">Muestra las victorias de cada jugador.</string>
+    <string name="hint_reset_history">Reinicia todo el juego.</string>
+    <string name="hint_set_names">Lista los nombres de los jugadores.</string>
+</resources>

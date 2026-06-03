@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_player" />
+
+    <TextView
+        android:id="@+id/tvPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/player_1_score"
+        tools:text="Player 1: 0 points"
+        app:layout_constraintBottom_toBottomOf="@+id/player"
+        app:layout_constraintStart_toEndOf="@+id/player"
+        app:layout_constraintTop_toTopOf="@+id/player" />
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlayer">
+
+        <Button
+            android:id="@+id/btnPlus1_P1"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/plus_1"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/btnPlus3_P1"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/plus_3"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/btnPlus6_P1"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/plus_6"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/btnPlus9_P1"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/plus_9"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/btnPlus12_P1"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/plus_12"
+            android:layout_margin="2dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonContainer"
+        app:srcCompat="@drawable/icon_player" />
+
+    <TextView
+        android:id="@+id/tvPlayer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/player_2_score"
+        tools:text="Player 2: 0 points"
+        app:layout_constraintBottom_toBottomOf="@+id/player2"
+        app:layout_constraintStart_toEndOf="@+id/player2"
+        app:layout_constraintTop_toTopOf="@+id/player2" />
+
+
+    <LinearLayout
+        android:id="@+id/buttonContainer2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlayer2">
+
+        <Button
+            android:id="@+id/btnPlus1_P2"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/plus_1"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/btnPlus3_P2"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/plus_3"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/btnPlus6_P2"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/plus_6"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/btnPlus9_P2"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/plus_9"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/btnPlus12_P2"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/plus_12"
+            android:layout_margin="2dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnMatchHistory"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/match_history"
+        android:hint="@string/hint_match_history"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonContainer2" />
+
+    <Button
+        android:id="@+id/btnResetHistory"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/reset_history"
+        android:hint="@string/hint_reset_history"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMatchHistory" />
+
+    <Button
+        android:id="@+id/btnSetNames"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/set_names"
+        android:hint="@string/hint_set_names"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnResetHistory" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
