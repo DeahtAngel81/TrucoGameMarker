@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TrucoGameMarker 🇬🇧</string>
+    <string name="app_name">TrucoGameMaker 🇬🇧</string>
     <string name="player_1_score">Player 1: %1$d points</string>
     <string name="player_2_score">Player 2: %1$d points</string>
     <string name="plus_1">+1</string>
