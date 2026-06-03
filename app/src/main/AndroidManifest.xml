@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TrucoGameMarker">
         <activity
+            android:name=".PlayerNamesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OverallScoreActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
