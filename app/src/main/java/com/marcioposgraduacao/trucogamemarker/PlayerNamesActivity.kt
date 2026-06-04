@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 class PlayerNamesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_player_names)
 
         val etP1 = findViewById<android.widget.EditText>(R.id.etPlayer1Name)
         val etP2 = findViewById<android.widget.EditText>(R.id.etPlayer2Name)
