@@ -25,17 +25,17 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="@string/player_1_score"
-        tools:text="Player 1: 0 points"
         app:layout_constraintBottom_toBottomOf="@+id/player"
         app:layout_constraintStart_toEndOf="@+id/player"
-        app:layout_constraintTop_toTopOf="@+id/player" />
+        app:layout_constraintTop_toTopOf="@+id/player"
+        tools:text="Player 1: 0 points" />
 
     <LinearLayout
         android:id="@+id/buttonContainer"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,45 +47,45 @@
             style="@style/Widget.MaterialComponents.Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="2dp"
             android:layout_weight="1"
-            android:text="@string/plus_1"
-            android:layout_margin="2dp"/>
+            android:text="@string/plus_1" />
 
         <Button
             android:id="@+id/btnPlus3_P1"
             style="@style/Widget.MaterialComponents.Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="2dp"
             android:layout_weight="1"
-            android:text="@string/plus_3"
-            android:layout_margin="2dp"/>
+            android:text="@string/plus_3" />
 
         <Button
             android:id="@+id/btnPlus6_P1"
             style="@style/Widget.MaterialComponents.Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="2dp"
             android:layout_weight="1"
-            android:text="@string/plus_6"
-            android:layout_margin="2dp"/>
+            android:text="@string/plus_6" />
 
         <Button
             android:id="@+id/btnPlus9_P1"
             style="@style/Widget.MaterialComponents.Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="2dp"
             android:layout_weight="1"
-            android:text="@string/plus_9"
-            android:layout_margin="2dp"/>
+            android:text="@string/plus_9" />
 
         <Button
             android:id="@+id/btnPlus12_P1"
             style="@style/Widget.MaterialComponents.Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="2dp"
             android:layout_weight="1"
-            android:text="@string/plus_12"
-            android:layout_margin="2dp"/>
+            android:text="@string/plus_12" />
     </LinearLayout>
 
     <ImageView
@@ -105,10 +105,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="@string/player_2_score"
-        tools:text="Player 2: 0 points"
         app:layout_constraintBottom_toBottomOf="@+id/player2"
         app:layout_constraintStart_toEndOf="@+id/player2"
-        app:layout_constraintTop_toTopOf="@+id/player2" />
+        app:layout_constraintTop_toTopOf="@+id/player2"
+        tools:text="Player 2: 0 points" />
 
 
     <LinearLayout
@@ -175,7 +175,7 @@
         android:layout_height="209dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="231dp"
+        android:layout_marginEnd="230dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="@+id/buttonContainer2"
         app:layout_constraintStart_toStartOf="parent"
@@ -186,8 +186,8 @@
             style="@style/Widget.MaterialComponents.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="btnMatchHistory"
             android:hint="@string/hint_match_history"
+            android:onClick="btnMatchHistory"
             android:text="@string/match_history" />
 
         <Button
@@ -196,8 +196,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:onClick="btnResetHistory"
             android:hint="@string/hint_reset_history"
+            android:onClick="btnResetHistory"
             android:text="@string/reset_history" />
 
         <Button
@@ -206,8 +206,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:onClick="btnSetNames"
             android:hint="@string/hint_set_names"
+            android:onClick="btnSetNames"
             android:text="@string/set_names" />
     </LinearLayout>
 

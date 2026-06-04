@@ -1,20 +1,45 @@
 package com.marcioposgraduacao.trucogamemarker
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+
 
 class PlayerNamesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_player_names)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val etP1 = findViewById<android.widget.EditText>(R.id.etPlayer1Name)
+        val etP2 = findViewById<android.widget.EditText>(R.id.etPlayer2Name)
+        val btnConfirm = findViewById<android.widget.Button>(R.id.btnConfirm)
+
+        btnConfirm.setOnClickListener {
+
+            val newName1 = etP1.text.toString()
+            val newName2 = etP2.text.toString()
+
+
+            if (newName1.isNotEmpty() && newName2.isNotEmpty()) {
+                val resultIntent = Intent()
+                resultIntent.putExtra("NEW_NAME_P1", newName1)
+                resultIntent.putExtra("NEW_NAME_P2", newName2)
+                setResult(RESULT_OK, resultIntent)
+
+                Toast.makeText(
+                    this, "Nomes e pontuações inicializados!!",
+                    Toast.LENGTH_SHORT
+                ).show()
+                finish()
+            } else {
+                Toast.makeText(
+                    this, "Por favor, preencha os nomes dos jogadores.",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+
+
         }
+
     }
 }
