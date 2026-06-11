@@ -11,9 +11,9 @@
     <string name="reset_history">Restablecer Historial</string>
     <string name="set_names">Informar Nombres</string>
     <string name="player_1_label">Jugador 1:</string>
-    <string name="player_1_hint">Ingrese el nombre del Jugador 1</string>
+    <string name="player_1_hint">Nombre del Jugador 1</string>
     <string name="player_2_label">Jugador 2:</string>
-    <string name="player_2_hint">Ingrese el nombre del Jugador 2</string>
+    <string name="player_2_hint">Nombre del Jugador 2</string>
     <string name="btn_confirm">Confirmar</string>
     <string name="hint_match_history">Muestra las victorias de cada jugador.</string>
     <string name="hint_reset_history">Reinicia todo el juego.</string>

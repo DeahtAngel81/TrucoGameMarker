@@ -187,8 +187,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hint_match_history"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/red_normal"
             android:onClick="btnMatchHistory"
-            android:text="@string/match_history" />
+            android:text="@string/match_history"
+            app:cornerRadius="15dp"
+            app:strokeWidth="5dp"/>
 
         <Button
             android:id="@+id/btnResetHistory"
@@ -198,7 +202,11 @@
             android:layout_marginTop="16dp"
             android:hint="@string/hint_reset_history"
             android:onClick="btnResetHistory"
-            android:text="@string/reset_history" />
+            android:text="@string/reset_history"
+            android:textColor="@color/orange_light"
+            android:backgroundTint="@color/light_yellow"
+            app:cornerRadius="15dp"
+            app:strokeWidth="5dp"/>
 
         <Button
             android:id="@+id/btnSetNames"
@@ -208,7 +216,11 @@
             android:layout_marginTop="16dp"
             android:hint="@string/hint_set_names"
             android:onClick="btnSetNames"
-            android:text="@string/set_names" />
+            android:text="@string/set_names"
+            android:textColor="@color/blue_dark"
+            android:backgroundTint="@color/green_light"
+            app:cornerRadius="15dp"
+            app:strokeWidth="5dp"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
