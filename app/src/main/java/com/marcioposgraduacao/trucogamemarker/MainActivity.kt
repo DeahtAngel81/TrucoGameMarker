@@ -1,6 +1,7 @@
 package com.marcioposgraduacao.trucogamemarker
 
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -45,8 +46,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btnPlus9_P2).setOnClickListener { addPoints(9, 2) }
         findViewById<Button>(R.id.btnPlus12_P2).setOnClickListener { addPoints(12, 2) }
 
-        // Botões de Ação
-        // Os ouvintes de clique agora são tratados via android:onClick no XML
+
     }
 
     private fun addPoints(points: Int, player: Int) {
@@ -60,17 +60,14 @@ class MainActivity : AppCompatActivity() {
         updateScoreDisplay()
     }
 
-    /*private fun updateScoreDisplay() {
-        tvPlayer1.text = getString(R.string.player_1_score, scoreP1).replace("Player 1", nameP1)
-        tvPlayer2.text = getString(R.string.player_2_score, scoreP2).replace("Player 2", nameP2)
-    }*/
 
+    @SuppressLint("SetTextI18n")
     private fun updateScoreDisplay() {
-        tvPlayer1.text = getString(R.string.player_1_score, scoreP1)
-            .replace("Player 1", nameP1)
-        tvPlayer2.text = getString(R.string.player_2_score, scoreP2)
-            .replace("Player 2", nameP2)
+        tvPlayer1.text = "$nameP1: $scoreP1"
+        tvPlayer2.text = "$nameP2: $scoreP2"
+
     }
+
     private fun showWinnerDialog(winnerName: String, playerIndex: Int) {
         if (playerIndex == 1) winsP1++ else winsP2++
 
@@ -94,10 +91,6 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("WINS_P2", winsP2)
         startActivity(intent)
 
-       /* val intent = Intent(this, PlayerNamesActivity::class.java)
-        intent.putExtra("CURRENT_NAME_P1", nomeAtualP1)
-        intent.putExtra("CURRENT_NAME_P2", nomeAtualP2)
-        startActivityForResult(intent, SEU_CODIGO_DE_REQUEST)*/
     }
 
     fun btnResetHistory(view: View) {
@@ -108,8 +101,10 @@ class MainActivity : AppCompatActivity() {
         nameP1 = "Player 1"
         nameP2 = "Player 2"
         updateScoreDisplay()
-        Toast.makeText(this, "Histórico reiniciado com sucesso!",
-            Toast.LENGTH_SHORT).show()
+        Toast.makeText(
+            this, "Histórico reiniciado com sucesso!",
+            Toast.LENGTH_SHORT
+        ).show()
     }
 
     fun btnSetNames(view: View) {
