@@ -49,7 +49,11 @@
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
             android:layout_weight="1"
-            android:text="@string/plus_1" />
+            android:backgroundTint="@color/light_yellow"
+            android:text="@string/plus_1"
+            android:textColor="@color/black"
+            app:cornerRadius="15dp"
+            app:strokeWidth="3dp" />
 
         <Button
             android:id="@+id/btnPlus3_P1"
@@ -58,7 +62,11 @@
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
             android:layout_weight="1"
-            android:text="@string/plus_3" />
+            android:backgroundTint="@color/yellow"
+            android:text="@string/plus_3"
+            android:textColor="@color/black"
+            app:cornerRadius="15dp"
+            app:strokeWidth="3dp" />
 
         <Button
             android:id="@+id/btnPlus6_P1"
@@ -67,7 +75,11 @@
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
             android:layout_weight="1"
-            android:text="@string/plus_6" />
+            android:backgroundTint="@color/bright_yellow"
+            android:text="@string/plus_6"
+            android:textColor="@color/black"
+            app:cornerRadius="15dp"
+            app:strokeWidth="3dp" />
 
         <Button
             android:id="@+id/btnPlus9_P1"
@@ -76,7 +88,11 @@
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
             android:layout_weight="1"
-            android:text="@string/plus_9" />
+            android:text="@string/plus_9"
+            android:backgroundTint="@color/gold"
+            android:textColor="@color/black"
+            app:cornerRadius="15dp"
+            app:strokeWidth="3dp" />
 
         <Button
             android:id="@+id/btnPlus12_P1"
@@ -85,7 +101,11 @@
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
             android:layout_weight="1"
-            android:text="@string/plus_12" />
+            android:backgroundTint="@color/amber"
+            android:text="@string/plus_12"
+            android:textColor="@color/black"
+            app:cornerRadius="15dp"
+            app:strokeWidth="3dp" />
     </LinearLayout>
 
     <ImageView
@@ -130,7 +150,11 @@
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
             android:layout_weight="1"
-            android:text="@string/plus_1" />
+            android:backgroundTint="@color/light_yellow"
+            android:text="@string/plus_1"
+            android:textColor="@color/black"
+            app:cornerRadius="15dp"
+            app:strokeWidth="3dp" />
 
         <Button
             android:id="@+id/btnPlus3_P2"
@@ -139,7 +163,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
             android:layout_weight="1"
-            android:text="@string/plus_3" />
+            android:backgroundTint="@color/yellow"
+            android:text="@string/plus_3"
+            android:textColor="@color/black"
+            app:cornerRadius="15dp"
+            app:strokeWidth="3dp"/>
+
 
         <Button
             android:id="@+id/btnPlus6_P2"
@@ -148,7 +177,11 @@
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
             android:layout_weight="1"
-            android:text="@string/plus_6" />
+            android:backgroundTint="@color/bright_yellow"
+            android:text="@string/plus_6"
+            android:textColor="@color/black"
+            app:cornerRadius="15dp"
+            app:strokeWidth="3dp" />
 
         <Button
             android:id="@+id/btnPlus9_P2"
@@ -157,7 +190,11 @@
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
             android:layout_weight="1"
-            android:text="@string/plus_9" />
+            android:text="@string/plus_9"
+            android:backgroundTint="@color/gold"
+            android:textColor="@color/black"
+            app:cornerRadius="15dp"
+            app:strokeWidth="3dp"/>
 
         <Button
             android:id="@+id/btnPlus12_P2"
@@ -166,7 +203,11 @@
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
             android:layout_weight="1"
-            android:text="@string/plus_12" />
+            android:backgroundTint="@color/amber"
+            android:text="@string/plus_12"
+            android:textColor="@color/black"
+            app:cornerRadius="15dp"
+            app:strokeWidth="3dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -186,13 +227,13 @@
             style="@style/Widget.MaterialComponents.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_match_history"
-            android:textColor="@color/black"
             android:backgroundTint="@color/red_normal"
+            android:hint="@string/hint_match_history"
             android:onClick="btnMatchHistory"
             android:text="@string/match_history"
+            android:textColor="@color/black"
             app:cornerRadius="15dp"
-            app:strokeWidth="5dp"/>
+            app:strokeWidth="5dp" />
 
         <Button
             android:id="@+id/btnResetHistory"
@@ -200,13 +241,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:backgroundTint="@color/light_yellow"
             android:hint="@string/hint_reset_history"
             android:onClick="btnResetHistory"
             android:text="@string/reset_history"
             android:textColor="@color/orange_light"
-            android:backgroundTint="@color/light_yellow"
             app:cornerRadius="15dp"
-            app:strokeWidth="5dp"/>
+            app:strokeWidth="5dp" />
 
         <Button
             android:id="@+id/btnSetNames"
@@ -214,13 +255,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:backgroundTint="@color/green_light"
             android:hint="@string/hint_set_names"
             android:onClick="btnSetNames"
             android:text="@string/set_names"
             android:textColor="@color/blue_dark"
-            android:backgroundTint="@color/green_light"
             app:cornerRadius="15dp"
-            app:strokeWidth="5dp"/>
+            app:strokeWidth="5dp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
