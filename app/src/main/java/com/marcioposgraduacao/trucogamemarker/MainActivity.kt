@@ -60,11 +60,17 @@ class MainActivity : AppCompatActivity() {
         updateScoreDisplay()
     }
 
-    private fun updateScoreDisplay() {
+    /*private fun updateScoreDisplay() {
         tvPlayer1.text = getString(R.string.player_1_score, scoreP1).replace("Player 1", nameP1)
         tvPlayer2.text = getString(R.string.player_2_score, scoreP2).replace("Player 2", nameP2)
-    }
+    }*/
 
+    private fun updateScoreDisplay() {
+        tvPlayer1.text = getString(R.string.player_1_score, scoreP1)
+            .replace("Player 1", nameP1)
+        tvPlayer2.text = getString(R.string.player_2_score, scoreP2)
+            .replace("Player 2", nameP2)
+    }
     private fun showWinnerDialog(winnerName: String, playerIndex: Int) {
         if (playerIndex == 1) winsP1++ else winsP2++
 
@@ -87,6 +93,11 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("WINS_P1", winsP1)
         intent.putExtra("WINS_P2", winsP2)
         startActivity(intent)
+
+       /* val intent = Intent(this, PlayerNamesActivity::class.java)
+        intent.putExtra("CURRENT_NAME_P1", nomeAtualP1)
+        intent.putExtra("CURRENT_NAME_P2", nomeAtualP2)
+        startActivityForResult(intent, SEU_CODIGO_DE_REQUEST)*/
     }
 
     fun btnResetHistory(view: View) {
@@ -97,11 +108,14 @@ class MainActivity : AppCompatActivity() {
         nameP1 = "Player 1"
         nameP2 = "Player 2"
         updateScoreDisplay()
-        Toast.makeText(this, "Histórico reiniciado com sucesso!", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Histórico reiniciado com sucesso!",
+            Toast.LENGTH_SHORT).show()
     }
 
     fun btnSetNames(view: View) {
         val intent = Intent(this, PlayerNamesActivity::class.java)
+        intent.putExtra("CURRENT_NAME_P1", nameP1)
+        intent.putExtra("CURRENT_NAME_P2", nameP2)
         startActivityForResult(intent, 100)
     }
 
